@@ -12,9 +12,9 @@ gamma_m = 0.05
 k_p = 0.4
 gamma_p = 0.1
 
-params = [k_m, k_p, gamma_m, gamma_p]
+params = [k_m, gamma_m, k_p, gamma_p]
 
-def sim(variables, t, params):          # ODE function???
+def sim(variables, t, params):              # ODE function with parameters (y, t, ...) as required by odeint()
 
     m = variables[0]
     p = variables[1]
