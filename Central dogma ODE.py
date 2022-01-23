@@ -14,7 +14,7 @@ gamma_p = 0.1
 
 params = [k_m, k_p, gamma_m, gamma_p]
 
-def sim(variables, t, parameters):          # ODE function???
+def sim(variables, t, params):          # ODE function???
 
     m = variables[0]
     p = variables[1]
